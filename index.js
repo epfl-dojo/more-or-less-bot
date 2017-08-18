@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
-const token = '393897398:AAHEcsWBv1ZBq7sT7Sh_LfFvZbALaprD-B0';
+const token = '$TOKEN';
 
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, {polling: true});
@@ -12,16 +12,16 @@ function randomInt(min, max)
 }
 
 // Matches "/echo [whatever]"
-bot.onText(/\/echo (.+)/, (msg, match) => {
+bot.onText(/\D+/, (msg, match) => {
   // 'msg' is the received Message from Telegram
   // 'match' is the result of executing the regexp above on the text content
   // of the message
 
   const chatId = msg.chat.id;
-  const resp = match[1]; // the captured "whatever"
+  const resp = match[0]; // the captured "whatever"
 
   // send back the matched "whatever" to the chat
-  bot.sendMessage(chatId, resp+" dogo ");
+  bot.sendMessage(chatId, resp + " humain ");
 });
 
 // The GAME
@@ -48,6 +48,8 @@ bot.onText(/\d+/, (msg, match) => {
   // send back the matched "whatever" to the chat
 });
 
+if
+
 // Matches /photo
 bot.onText(/\/photo/, function onPhotoText(msg) {
   // From file path
@@ -62,6 +64,4 @@ bot.onText(/\/photo/, function onPhotoText(msg) {
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
 
-  // send a message to the chat acknowledging receipt of their message
-  bot.sendMessage(chatId, 'Received your message');
 });
