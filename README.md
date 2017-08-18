@@ -10,3 +10,5 @@ A little game in telegram messenger. Write a number it will tell you if it's big
 1. `$ npm install`
 1. `$ npm start`
 1. Go play in your awesome Telegram app !!
+
+This version is chocomoon's fork

@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
-const token = 'API TOKEN COMES HERE';
+const token = '393897398:AAHEcsWBv1ZBq7sT7Sh_LfFvZbALaprD-B0';
 
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, {polling: true});
@@ -35,15 +35,15 @@ bot.onText(/\d+/, (msg, match) => {
   const essai = match[0]; // the captured "whatever"
 
   if (essai == nombre){
-    bot.sendMessage(chatId, '💰');
+    bot.sendMessage(chatId, 'Bravo! 🍫');
   }
 
   if (essai > nombre) {
-    bot.sendMessage(chatId, essai+" trop grand essaies encore ")
+    bot.sendMessage(chatId, essai+" Trop grand essaie encore!")
   }
 
   if (essai < nombre) {
-    bot.sendMessage(chatId, essai+" trop petit essaies encore ")
+    bot.sendMessage(chatId, essai+" Trop petit essaie encore!")
   }
   // send back the matched "whatever" to the chat
 });
