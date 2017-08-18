@@ -1,0 +1,29 @@
+# EPFL-DOJO 18.08.2017
+# Introduction to programmation, Linux command lines and nodeJS.
+# A little game where the goal is to guess a number. The bot tells
+# if the number is bigger or smaller than user input.
+
+1) Make this folder a node project.
+$ npm init
+Accept defaults
+
+2) Install Bot package (https://github.com/yagop/node-telegram-bot-api).
+$ npm install --save node-telegram-bot-api
+
+3) Create file `index.js` and copy paste the exemple 
+   code (https://github.com/yagop/node-telegram-bot-api)
+
+4) Make the `$ npm start` command point on our script.
+In package.json under `script:` add line with `start: "node index.json"`
+
+5) Put correct api key in our script. See `https://core.telegram.org/bots`.
+
+6) Run script and try it.
+$ npm start
+
+ /|\  It won't work if you don't have an API key !! 
+/_._\ I don't share mine in code ;)
+
+7) Start coding :)
+
+
