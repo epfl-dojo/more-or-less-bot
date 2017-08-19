@@ -1,15 +1,29 @@
 {
   "name": "more-or-less-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A little game in telegram messenger. Write a number it will tell you if it's bigger or smaller.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "@epfl-dojo",
+  "license": "MIT",
   "dependencies": {
     "node-telegram-bot-api": "^0.28.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epfl-dojo/more-or-less-bot.git"
+  },
+  "keywords": [
+    "Telegram",
+    "bot",
+    "game",
+    "more or less"
+  ],
+  "bugs": {
+    "url": "https://github.com/epfl-dojo/more-or-less-bot/issues"
+  },
+  "homepage": "https://github.com/epfl-dojo/more-or-less-bot#readme"
 }

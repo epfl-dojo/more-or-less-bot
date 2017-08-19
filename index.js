@@ -8,7 +8,7 @@ const bot = new TelegramBot(token, {polling: true});
 
 function randomInt(min, max)
 {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 // Matches "/echo [whatever]"
@@ -59,9 +59,7 @@ bot.onText(/\/photo/, function onPhotoText(msg) {
   });
 });
 
-// Listen for any kind of message. There are different kinds of
-// messages.
+// Listen for any kind of message. There are different kinds of messages.
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
-
 });
